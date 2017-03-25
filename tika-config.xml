@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- See https://tika.apache.org/1.14/configuring.html -->
+<properties>
+
+  <parsers>
+    <parser class="org.apache.tika.parser.DefaultParser">
+      <!-- Uncomment to disable Tesseract OCR https://wiki.apache.org/tika/TikaOCR -->
+      <!-- <parser-exclude class="org.apache.tika.parser.ocr.TesseractOCRParser"/> -->
+
+      <!-- For PDF parsing seel https://wiki.apache.org/tika/PDFParser%20%28Apache%20PDFBox%29 -->
+    </parser>
+  </parsers>
+
+  <detectors>
+    <detector class="org.apache.tika.detect.DefaultDetector">
+    </detector>
+  </detectors>
+
+</properties>
