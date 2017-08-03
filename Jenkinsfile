@@ -17,7 +17,7 @@ node {
     slackSend color: "warning", message: "Pushing image to AWS repository: ${identifier}"
     try {
       docker.withRegistry('https://024673053271.dkr.ecr.us-west-2.amazonaws.com', 'ecr:us-west-2:aws-test') {
-        image.push('latest')
+        image.push('${BRANCH_NAME}_latest')
       }
       slackSend color: "good", message: "Push complete for: ${identifier}"
     } catch (exc) {
