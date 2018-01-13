@@ -4,7 +4,7 @@
 
   <parsers>
     <parser class="org.apache.tika.parser.DefaultParser">
-      <!-- Uncomment to disable Tesseract OCR https://wiki.apache.org/tika/TikaOCR -->
+      <!-- Disable Tesseract OCR https://wiki.apache.org/tika/TikaOCR -->
       <parser-exclude class="org.apache.tika.parser.ocr.TesseractOCRParser"/>
 
       <!-- For PDF parsing see https://wiki.apache.org/tika/PDFParser%20%28Apache%20PDFBox%29 -->
